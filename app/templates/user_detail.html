@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>User Detail</h1>
+<p>Second Name: {{ user.second_name }}</p>
+<p>Real Name: {{ user.real_name.username }}</p>
+    <a href="{% url 'user_list' %}">Назад</a>
+{% endblock %}
